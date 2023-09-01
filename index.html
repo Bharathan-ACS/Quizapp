@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Quiz</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- <script type="texr/JavaScript" src="script.js"></script> -->
+    </head>
+    <body>
+        <div  id="container" class="container">
+            <h1>JavaScript Quiz</h1>
+            <div id="question" class="question-btn"> </div>
+            <label class="option" >
+                <input type="radio" name="option" value="1"> 
+                <span  id="Option1"></span>
+            </label>
+            <label class="option" >
+                <input type="radio" name="option" value="2">
+                <span id="Option2"></span>
+            </label>
+            <label class="option" >
+                <input type="radio" name="option"  value="3">
+                <span id="Option3"></span>
+            </label>
+            <label class="option" >
+                <input type="radio" name="option" value="4">
+                <span id="Option4"></span>
+            </label><br><br>
+            <button id="next" type="button" onclick="NextQuestion()" class="button-btn">NEXT</button>
+        </div>
+        <button type="button" id="result" class="result" style="display: none;" onclick="Result()">SUBMIT</button>
+        <div id="score"></div>
+<script src="script.js"></script>
+    </body>
+    </html>
